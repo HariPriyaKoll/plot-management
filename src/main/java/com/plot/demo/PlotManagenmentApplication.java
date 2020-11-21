@@ -32,7 +32,7 @@ public class PlotManagenmentApplication {
     @Bean
     public ApiInfo apiInfo() {
         final ApiInfoBuilder builder = new ApiInfoBuilder();
-        builder.title("Quotes Api").version("1.0").license("(C) Copyright Nofts")
+        builder.title("Plot Managenment").version("1.0").license("(C) Copyright Nofts")
                 .description("List of all the APIs of PlotManagenment Application through Swagger UI");
         return builder.build();
     }
