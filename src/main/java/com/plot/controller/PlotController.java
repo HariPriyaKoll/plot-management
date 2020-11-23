@@ -3,6 +3,7 @@ package com.plot.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,6 +18,7 @@ import com.plot.model.SiteModel;
 import com.plot.repository.PlotRepository;
 
 @RestController
+@CrossOrigin(origins = "https://plot-management-app.herokuapp.com")
 public class PlotController {
 	
 	@Autowired
